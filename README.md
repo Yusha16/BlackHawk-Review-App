@@ -14,6 +14,7 @@ The project right now have:
 - User registration 
 - Loading functionality (Review List view to see the implementation)
 - When hosting please set the 'config var' to include the MONGODB_URI
+- Small amount of validation for error message (Sign Up view to see the implementation)
 
 ## Getting started
 Add a .env file and in that file set: MAILGUN_API_KEY and DOMAIN (both can be found in the Mailgun dashboard)  

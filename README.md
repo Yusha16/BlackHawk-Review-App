@@ -1,8 +1,8 @@
 # BlackHawk-Review-App
 
 ## Project Summary
-Project that was build on top of a tutorial where user can see a list of task (with different states) with CRUD functionality for the tasks.  
-Link to the GitHub tutorial: https://github.com/danielstern/express-react-fullstack
+Project that was build on top of a tutorial where user can see a list of task (with different states) with CRUD functionality for the tasks.   
+Link to the GitHub tutorial: https://github.com/danielstern/express-react-fullstack  
 Project was build using React, Express, and MongoDB.  
 The project right now have:  
 - A link to email (nav link) where you can compose email to a person

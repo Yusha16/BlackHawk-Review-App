@@ -1,0 +1,62 @@
+{
+  "name": "react-express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "deploy": "npm run build && git commit -a -m Deployment && git push heroku master",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run server",
+    "dev": "webpack-dev-server --open",
+    "initialize": "babel-node src/server/initialize-db",
+    "server": "cross-env NODE_ENV=production babel-node ./src/server/server.js",
+    "server-dev": "babel-node src/server/server",
+    "server-test": "babel-node src/server/server.spec",
+    "start-dev": "concurrently \"npm run server-dev\" \"npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "engines": {
+    "node": "9.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "history": "^4.7.2",
+    "md5": "^2.3.0",
+    "mongodb": "^3.1.10",
+    "nodemailer": "^6.4.11",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "puppeteer": "^1.7.0",
+    "react": "^16.4.2",
+    "react-csv-reader": "^3.1.1",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.2",
+    "uuid": "^8.3.0",
+    "webpack": "^4.17.2"
+  }
+}
